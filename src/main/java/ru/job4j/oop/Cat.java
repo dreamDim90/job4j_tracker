@@ -10,10 +10,6 @@ public class Cat {
         System.out.println(this.food);
     }
 
-    /*public void showname() {
-        System.out.println(this.name);
-    }*/
-
     public void eat(String meat) {
         this.food = meat;
     }
