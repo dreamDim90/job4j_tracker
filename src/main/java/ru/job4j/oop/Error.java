@@ -10,6 +10,7 @@ public class Error {
         this.status = status;
         this.message = message;
     }
+
     public Error() {
     }
 
