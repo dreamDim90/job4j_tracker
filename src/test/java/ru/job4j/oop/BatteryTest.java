@@ -11,7 +11,7 @@ public class BatteryTest {
         Battery another = new Battery(50);
         charger.exchange(another);
         int expected = 80;
-        assertThat(another.about()).isEqualTo("My charge: " + expected + "%");
+        assertThat(another.about()).isEqualTo("My charge:" + expected + "%");
     }
 
     @Test
@@ -20,7 +20,7 @@ public class BatteryTest {
         Battery another = new Battery(20);
         charger.exchange(another);
         int expected = 0;
-        assertThat(charger.about()).isEqualTo("My charge: " + expected + "%");
+        assertThat(charger.about()).isEqualTo("My charge:" + expected + "%");
     }
 
     @Test
@@ -29,6 +29,6 @@ public class BatteryTest {
         Battery another = new Battery(0);
         charger.exchange(another);
         int expected = 95;
-        assertThat(another.about()).isEqualTo("My charge: " + expected + "%");
+        assertThat(another.about()).isEqualTo("My charge:" + expected + "%");
     }
 }
