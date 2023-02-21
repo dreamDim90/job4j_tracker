@@ -3,24 +3,24 @@ package ru.job4j.pojo;
 import java.util.Date;
 
 public class Student {
-    private String FIO;
-    private String Group;
+    private String fIO;
+    private String group;
     private Date created;
 
     public String getFIO() {
-        return FIO;
+        return fIO;
     }
 
-    public void setFIO(String FIO) {
-        this.FIO = FIO;
+    public void setFIO(String fIO) {
+        this.fIO = fIO;
     }
 
     public String getGroup() {
-        return Group;
+        return group;
     }
 
     public void setGroup(String group) {
-        Group = group;
+        this.group = group;
     }
 
     public Date getCreated() {
