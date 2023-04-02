@@ -6,6 +6,4 @@ public interface Transport {
     void passenger(int numberPassenger);
 
     double refill(int fuel);
-
-    double priceOne = 60.7;
 }
