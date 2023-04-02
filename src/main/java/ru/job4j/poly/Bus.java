@@ -13,7 +13,7 @@ public class Bus implements Transport {
 
     @Override
     public double refill(int fuel) {
-        double price = fuel * priseOneLiter;
+        double price = fuel * priceLiter;
         System.out.println("Стомиость заправки автобуса составляет " + price + " рублей");
         return price;
     }
