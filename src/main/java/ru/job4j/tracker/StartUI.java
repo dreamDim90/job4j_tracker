@@ -68,6 +68,7 @@ public class StartUI {
             System.out.println("Заявки с именем: " + name + "не найдены.");
         }
     }
+
     public void init(Input input, Tracker tracker) {
         boolean run = true;
         while (run) {
