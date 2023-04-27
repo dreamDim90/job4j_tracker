@@ -18,6 +18,6 @@ public class EditAction implements UserAction {
             System.out.println("Ошибка замены заявки.");
         }
 
-return true;
+        return true;
     }
 }

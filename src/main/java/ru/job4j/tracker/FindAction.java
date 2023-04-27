@@ -19,6 +19,6 @@ public class FindAction implements UserAction {
             System.out.println("Заявки с именем: " + name + " не найдены.");
         }
 
-return true;
+        return true;
     }
 }
