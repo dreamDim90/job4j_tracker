@@ -135,7 +135,6 @@ public class StartUITest {
         );
     }
 
-
     @Test
     public void whenFindActionIdTestOutputIsSuccessfully1() {
         Output out = new StubOutput();
