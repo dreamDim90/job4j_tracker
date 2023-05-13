@@ -18,10 +18,10 @@ public class FactTest {
     }
 
     @Test
-    public void whenCalculation () {
-       int n = 5;
-       int expected = 120;
-       int result = Fact.calc(n);
-       assertThat(result).isEqualTo(expected);
+    public void whenCalculation() {
+        int n = 5;
+        int expected = 120;
+        int result = Fact.calc(n);
+        assertThat(result).isEqualTo(expected);
     }
 }
