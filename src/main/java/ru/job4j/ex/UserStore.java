@@ -5,10 +5,8 @@ public class UserStore {
         User temp = null;
         for (User user : users) {
             if (login.equals(user.getUsername())) {
-                temp = user;
-                break;
+                return temp;
             }
-            return temp;
         }
         throw new UserNotFoundException("Element not found");
     }
@@ -22,7 +20,7 @@ public class UserStore {
 
     public static void main(String[] args) {
         User[] users = {
-                new User("Pe", true)
+                new User("Petr Arsentev", true)
         };
         try {
             User user = findUser(users, "Petr Arsentev");
