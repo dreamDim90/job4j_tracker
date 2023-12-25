@@ -5,7 +5,6 @@ import java.util.HashSet;
 import java.util.List;
 
 public class FullSearch {
-    //private ArrayList<Task> tasks = new ArrayList<>();
 
     public HashSet<String> extractNumber(List<Task> tasks) {
         HashSet<String> numbers = new HashSet<>();
