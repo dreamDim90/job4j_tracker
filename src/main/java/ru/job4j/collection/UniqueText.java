@@ -15,9 +15,6 @@ public class UniqueText {
            if (!check.contains(j)) {
                result = false;
                break;
-           /*} else {
-               result = false;
-               break;*/
            }
         }
         return result;
