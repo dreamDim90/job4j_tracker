@@ -1,6 +1,7 @@
 package ru.job4j.collection;
 
 import java.util.Objects;
+
 public class Account {
     private String passport;
     private String username;
