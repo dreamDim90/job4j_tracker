@@ -20,6 +20,6 @@ public class PassportOfficeTest {
         PassportOffice office = new PassportOffice();
         office.add(citizen);
         office.add(citizen1);
-        assertThat(office.get(citizen1.getUsername())).isEqualTo(null);
+        assertThat(office.add(citizen1)).isEqualTo(false);
     }
 }
