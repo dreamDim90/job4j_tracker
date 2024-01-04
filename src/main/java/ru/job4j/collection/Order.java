@@ -6,6 +6,23 @@ public class Order {
     private String number;
     private String name;
 
+    public Order(String number, String name) {
+        this.number = number;
+        this.name = name;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{"
+                + "number='" + number + '\''
+                + ", name='" + name + '\''
+                + '}';
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -21,22 +38,5 @@ public class Order {
     @Override
     public int hashCode() {
         return Objects.hash(number, name);
-    }
-
-    @Override
-    public String toString() {
-        return "Order{"
-                + "number='" + number + '\''
-                + ", name='" + name + '\''
-                + '}';
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public Order(String number, String name) {
-        this.number = number;
-        this.name = name;
     }
 }
