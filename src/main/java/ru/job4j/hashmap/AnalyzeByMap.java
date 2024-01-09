@@ -11,7 +11,7 @@ public class AnalyzeByMap {
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
                  score += subject.score();
-                 subjects ++;
+                 subjects++;
             }
         }
         return score / subjects;
