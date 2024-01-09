@@ -3,17 +3,20 @@ package ru.job4j.bank;
 import java.util.Objects;
 
 public class User {
+    private String passport;
+    private String username;
+
+    public User(String passport, String username) {
+        this.passport = passport;
+        this.username = username;
+    }
+
     public String getPassport() {
         return passport;
     }
 
     public void setPassport(String passport) {
         this.passport = passport;
-    }
-
-    public User(String passport, String username) {
-        this.passport = passport;
-        this.username = username;
     }
 
     public String getUsername() {
@@ -23,9 +26,6 @@ public class User {
     public void setUsername(String username) {
         this.username = username;
     }
-
-    private String passport;
-    private String username;
 
     @Override
     public boolean equals(Object o) {
