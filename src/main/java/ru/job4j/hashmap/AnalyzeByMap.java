@@ -45,20 +45,26 @@ public class AnalyzeByMap {
 
     public static Label bestStudent(List<Pupil> pupils) {
         List<Label> rsl = new ArrayList<>();
+        Label value = new Label("", 0);
         for (Pupil pupil : pupils) {
             double sumScore = 0;
             for (Subject subject : pupil.subjects()) {
                 sumScore += subject.score();
             }
             rsl.add(new Label(pupil.name(), sumScore));
-            rsl.sort(Comparator.naturalOrder());
+            for (Label result : rsl) {
+                if (value.compareTo(result) == -1) {
+                    value = result;
+                }
+            }
         }
-        return rsl.get(rsl.size() - 1);
+        return value;
     }
 
     public static Label bestSubject(List<Pupil> pupils) {
         Map<String, Integer> values = new HashMap<>();
         List<Label> rsl = new ArrayList<>();
+        Label results = new Label("", 0);
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
                 values.put(subject.name(), values.getOrDefault(subject.name(), 0) + subject.score());
@@ -67,7 +73,11 @@ public class AnalyzeByMap {
         for (String value : values.keySet()) {
             rsl.add(new Label(value, values.get(value)));
         }
-        rsl.sort(Comparator.naturalOrder());
-        return rsl.get(rsl.size() - 1);
+        for (Label result : rsl) {
+            if (results.compareTo(result) == -1) {
+                results = result;
+            }
+        }
+        return results;
     }
 }
