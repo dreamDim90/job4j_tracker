@@ -52,10 +52,10 @@ public class AnalyzeByMap {
                 sumScore += subject.score();
             }
             rsl.add(new Label(pupil.name(), sumScore));
-            for (Label result : rsl) {
-                if (value.compareTo(result) == -1) {
-                    value = result;
-                }
+        }
+        for (Label result : rsl) {
+            if (value.compareTo(result) == -1) {
+                value = result;
             }
         }
         return value;
