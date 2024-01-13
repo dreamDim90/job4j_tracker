@@ -25,7 +25,7 @@ public class Tracker {
         return result;
     }
 
-    public ArrayList<Item> findByName (String key) {
+    public ArrayList<Item> findByName(String key) {
         ArrayList<Item> result = new ArrayList<>();
         for (Item item : items) {
             if (item.getName().contains(key)) {
@@ -66,7 +66,7 @@ public class Tracker {
         boolean rsl = index != -1;
         if (rsl) {
             items.remove(index);
-            size --;
+            size--;
         }
         return rsl;
     }
