@@ -11,17 +11,17 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class ItemAscByNameTest {
     @Test
     public void whenItemAsc() {
-        List<Item> items = new ArrayList<>();
-            items.add(new Item("Petr"));
-            items.add(new Item("Vova"));
-            items.add(new Item("Dima"));
-            items.add(new Item("Oleg"));
+        List<Item> items = Arrays.asList(
+                new Item("Petr"),
+                new Item("Vladimir"),
+                new Item("Dima"),
+                new Item("Oleg"));
         items.sort(new ItemAscByName());
-        List<Item> expected = new ArrayList<>();
-            items.add(new Item("Dima"));
-            items.add(new Item("Oleg"));
-            items.add(new Item("Petr"));
-            items.add(new Item("Vova"));
+        List<Item> expected = Arrays.asList(
+                new Item("Dima"),
+                new Item("Oleg"),
+                new Item("Petr"),
+                new Item("Vladimir"));
         assertThat(items).isEqualTo(expected);
     }
 }

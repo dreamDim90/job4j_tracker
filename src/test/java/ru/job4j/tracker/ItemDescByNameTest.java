@@ -17,12 +17,12 @@ public class ItemDescByNameTest {
         items.add(new Item("Vova"));
         items.add(new Item("Dima"));
         items.add(new Item("Oleg"));
-        items.sort(new ItemAscByName());
+        items.sort(new ItemDescByName());
         List<Item> expected = new ArrayList<>();
-        items.add(new Item("Vova"));
-        items.add(new Item("Petr"));
-        items.add(new Item("Oleg"));
-        items.add(new Item("Dima"));
+        expected.add(new Item("Vova"));
+        expected.add(new Item("Petr"));
+        expected.add(new Item("Oleg"));
+        expected.add(new Item("Dima"));
         assertThat(items).isEqualTo(expected);
     }
 }
