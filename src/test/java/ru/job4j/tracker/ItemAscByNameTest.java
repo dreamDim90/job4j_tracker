@@ -22,6 +22,6 @@ public class ItemAscByNameTest {
             items.add(new Item("Oleg"));
             items.add(new Item("Petr"));
             items.add(new Item("Vova"));
-        assertThat(items).containsAll(expected);
+        assertThat(items).isEqualTo(expected);
     }
 }
