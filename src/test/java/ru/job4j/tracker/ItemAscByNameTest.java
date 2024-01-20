@@ -15,9 +15,11 @@ public class ItemAscByNameTest {
                 new Item("Petr"),
                 new Item("Vladimir"),
                 new Item("Dima"),
-                new Item("Oleg"));
+                new Item("Oleg"),
+                new Item("Andrew"));
         items.sort(new ItemAscByName());
         List<Item> expected = Arrays.asList(
+                new Item("Andrew"),
                 new Item("Dima"),
                 new Item("Oleg"),
                 new Item("Petr"),
