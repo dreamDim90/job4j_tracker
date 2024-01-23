@@ -19,8 +19,6 @@ public class ScheduleTask {
     }
 
     public Task getTask() {
-        Task el = queue.peek();
-        queue.poll();
-        return el;
+        return queue.poll();
     }
 }
