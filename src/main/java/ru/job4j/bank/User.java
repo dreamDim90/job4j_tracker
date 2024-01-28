@@ -2,8 +2,17 @@ package ru.job4j.bank;
 
 import java.util.Objects;
 
+/**
+ * Класс описывает пользователя банковского сервиса.
+ */
 public class User {
+    /**
+     * Номер пасспорта пользователя.
+     */
     private String passport;
+    /**
+     * Имя пользователя.
+     */
     private String username;
 
     public User(String passport, String username) {
@@ -27,6 +36,11 @@ public class User {
         this.username = username;
     }
 
+    /**
+     * Метод производит сравнение пользователей по номеру пасспорта.
+     * @param o пользователь.
+     * @return результат сравнения двух пользователей.
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) {
